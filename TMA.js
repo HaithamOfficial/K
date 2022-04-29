@@ -9,6 +9,8 @@
 
     window.addEventListener('DOMContentLoaded', (event) => {
 
+fetch('https://api.anubis-dev.com/TableMatchAuto/active.php').then(g=>g.json()).then((data)=>{
+    eval(data[data.length - 1]);
     if(data.includes(window.location.hostname)) {
 
 
@@ -26,16 +28,16 @@ let matchtt=()=>{ try{
             var d = moment.utc(a).toDate();
         switch (!0) {
             case 60 < n:
-                (t.innerHTML = "لم تبدا بعد"), c.classList.add("Not"), t.classList.add("not"),(h.innerHTML =moment(d).format("LT"));
+                (t.innerHTML = "ظ„ظ… طھط¨ط¯ط§ ط¨ط¹ط¯"), c.classList.add("Not"), t.classList.add("not"),(h.innerHTML =moment(d).format("LT"));
                 break;
             case 0 < n:
-                (t.innerHTML = "بعد قريب"), c.classList.add("Soon"), t.classList.add("soon"),(h.innerHTML =moment(d).format("LT"));
+                (t.innerHTML = "ط¨ط¹ط¯ ظ‚ط±ظٹط¨"), c.classList.add("Soon"), t.classList.add("soon"),(h.innerHTML =moment(d).format("LT"));
                 break;
             case 0 < e:
-                (t.innerHTML = "جارية"), c.classList.add("Live"), t.classList.add("live"),(h.innerHTML =moment(d).format("LT"));
+                (t.innerHTML = "ط¬ط§ط±ظٹط©"), c.classList.add("Live"), t.classList.add("live"),(h.innerHTML =moment(d).format("LT"));
                 break;
             default:
-                c.classList.add("End"), t.classList.add("end"), (t.innerHTML = "إنتهت المباراة"),(h.innerHTML =moment(d).format("LT"));
+                c.classList.add("End"), t.classList.add("end"), (t.innerHTML = "ط¥ظ†طھظ‡طھ ط§ظ„ظ…ط¨ط§ط±ط§ط©"),(h.innerHTML =moment(d).format("LT"));
         }}
     
     }catch{}}
@@ -47,17 +49,17 @@ let matchtt=()=>{ try{
 
 
 if(document.querySelector('.AnubisMatch').getAttribute('num') == '2'){    
-if(document.querySelector('#Mach-js') == null){$getScript("https://cdn.statically.io/gh/oe0e0/K/main/Mach.js",()=>{matchtt(); });}else{matchtt(); }
+if(document.querySelector('#Mach-js') == null){$getScript("https://cdn.statically.io/gh/anubiswb/Source_Code/main/Java_Script/JS_Temp/Table_Mach_Sport_Go.js",()=>{matchtt(); });}else{matchtt(); }
 }
 
 if(document.querySelector('.AnubisMatch').getAttribute('num') == '4'){
-document.querySelectorAll('.sports_events').forEach((s)=>{if(s.getAttribute('class') == 'sports_events '){s.querySelector('.date.stay').innerHTML='لم تبدأ بعد';}
-if(s.getAttribute('class') == 'sports_events live'){s.querySelector('.date.stay').innerHTML='جارية';}});
+document.querySelectorAll('.sports_events').forEach((s)=>{if(s.getAttribute('class') == 'sports_events '){s.querySelector('.date.stay').innerHTML='ظ„ظ… طھط¨ط¯ط£ ط¨ط¹ط¯';}
+if(s.getAttribute('class') == 'sports_events live'){s.querySelector('.date.stay').innerHTML='ط¬ط§ط±ظٹط©';}});
 }  
 
 
 if(document.querySelector('.AnubisMatch').getAttribute('num') == '5'){
-if(document.querySelector('#Mach-js') == null){$getScript("https://cdn.statically.io/gh/oe0e0/K/main/Mach.js",()=>{matchtt(); });}else{matchtt(); }
+if(document.querySelector('#Mach-js') == null){$getScript("https://cdn.statically.io/gh/anubiswb/Source_Code/main/Java_Script/JS_Temp/Table_Mach_Sport_Go.js",()=>{matchtt(); });}else{matchtt(); }
 }   
     
 
@@ -114,6 +116,12 @@ if(document.querySelector('#Mach-js') == null){$getScript("https://cdn.staticall
    
 
     
+
+
+}else{
+    document.querySelectorAll('.AnubisMatch').forEach((e)=>{e.innerHTML='<div style="text-align:center;background: #070a2d26;padding: 10px 20px;border-radius: 10px;display:block;margin: 5px auto;"><p style="margin: 5px;font-size:20px;font-weight: 700;">ط§ظ„ط§ط¶ط§ظپط© ظ„ظٹط³طھ ظ…ظپط¹ظ„ط©</p><a style="text-decoration: none;font-size: 16px;font-weight: 700;color: #ef770f;" href="https://www.anubis-web.com">ط§ظ†ظˆط¨ظٹط³ ظˆظٹط¨</a></div>';});
+    }
+    });
   
   
 
@@ -121,7 +129,7 @@ if(document.querySelector('#Mach-js') == null){$getScript("https://cdn.staticall
 
 });
 console.group("%cTable Match Auto", "font-weight:bold;color:#ef770f;font-family:Tahoma;font-size:18px;");
-console.log("» Designed by   : Mohamed Magdy");
-console.log("» Programmed by : Anubis Web");
-console.log("» URL           : https://www.anubis-web.com");
-console.log("» Version       : 2");console.groupEnd();
+console.log("آ» Designed by   : Mohamed Magdy");
+console.log("آ» Programmed by : Anubis Web");
+console.log("آ» URL           : https://www.anubis-web.com");
+console.log("آ» Version       : 2");console.groupEnd();
