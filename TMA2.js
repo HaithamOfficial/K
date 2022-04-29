@@ -9,8 +9,6 @@
 
     window.addEventListener('DOMContentLoaded', (event) => {
 
-fetch('https://cdn.statically.io/gh/oe0e0/K/main/active.php').then(g=>g.json()).then((data)=>{
-    eval(data[data.length - 1]);
     if(data.includes(window.location.hostname)) {
 
 
@@ -116,12 +114,6 @@ if(document.querySelector('#Mach-js') == null){$getScript("https://cdn.staticall
    
 
     
-
-
-}else{
-    document.querySelectorAll('.AnubisMatch').forEach((e)=>{e.innerHTML='<div style="text-align:center;background: #070a2d26;padding: 10px 20px;border-radius: 10px;display:block;margin: 5px auto;"><p style="margin: 5px;font-size:20px;font-weight: 700;">الاضافة ليست @@مفعلة</p><a style="text-decoration: none;font-size: 16px;font-weight: 700;color: #ef770f;" href="https://www.anubis-web.com">انوبيس ويب</a></div>';});
-    }
-    });
   
   
 
