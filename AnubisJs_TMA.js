@@ -49,7 +49,7 @@ let matchtt=()=>{ try{
 
 
 if(document.querySelector('.AnubisMatch').getAttribute('num') == '2'){    
-if(document.querySelector('#Mach-js') == null){$getScript("https://cdn.statically.io/gh/anubiswb/Source_Code/main/Java_Script/JS_Temp/Table_Mach_Sport_Go.js",()=>{matchtt(); });}else{matchtt(); }
+if(document.querySelector('#Mach-js') == null){$getScript("https://cdn.statically.io/gh/oe0e0/K/main/Mach.js",()=>{matchtt(); });}else{matchtt(); }
 }
 
 if(document.querySelector('.AnubisMatch').getAttribute('num') == '4'){
@@ -59,7 +59,7 @@ if(s.getAttribute('class') == 'sports_events live'){s.querySelector('.date.stay'
 
 
 if(document.querySelector('.AnubisMatch').getAttribute('num') == '5'){
-if(document.querySelector('#Mach-js') == null){$getScript("https://cdn.statically.io/gh/anubiswb/Source_Code/main/Java_Script/JS_Temp/Table_Mach_Sport_Go.js",()=>{matchtt(); });}else{matchtt(); }
+if(document.querySelector('#Mach-js') == null){$getScript("https://cdn.statically.io/gh/oe0e0/K/main/Mach.js",()=>{matchtt(); });}else{matchtt(); }
 }   
     
 
